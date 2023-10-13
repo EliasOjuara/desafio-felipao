@@ -1,6 +1,6 @@
 // Solicita o nome e a quantidade de experiência (XP) do herói
-const nome = "Digite o nome do herói: "
-const xp = "Digite a quantidade de experiência (XP) do herói:"
+const nome = "Roberto"
+let xp = "1001"
 
 // Usa uma estrutura de decisão para determinar o nível com base na quantidade de XP
 let nivel = ""
@@ -24,4 +24,4 @@ if (xp < 1000) {
 }
 
 // Exibe a mensagem com o nome e o nível do herói
-console.log("O Herói de nome " + nome "está no nível de" + nivel)
+console.log("O Herói de nome " + nome,"está no nível de " + nivel)
