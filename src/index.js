@@ -1,5 +1,5 @@
 // Solicita o nome e a quantidade de experiência (XP) do herói
-const nome = "Roberto"
+const nome = "Chico"
 let xp = "1001"
 
 // Usa uma estrutura de decisão para determinar o nível com base na quantidade de XP
