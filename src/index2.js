@@ -1,16 +1,16 @@
-let saldoVitorias = quantidade(60, 25)
+let saldoVitorias = calcularNivel(150, 25)
 
-    if (quantidade < 10){
+    if (calcularNivel < 10){
         nivel = "Ferro"
-    } else if (quantidade >= 11){
+    } else if (calcularNivel >= 11 && calcularNivel <= 20){
         nivel = "Bronze"
-    } else if (quantidade >= 21){
+    } else if (calcularNivel >= 21 && calcularNivel <= 50){
         nivel = "Prata"
-    } else if (quantidade >= 51){
+    } else if (calcularNivel >= 51 && calcularNivel <= 80){
         nivel = "Ouro"    
-    } else if (quantidade >= 81){
+    } else if (calcularNivel >= 81 && calcularNivel <= 90){
         nivel = "Diamante"
-    } else if (quantidade >= 91){
+    } else if (calcularNivel >= 91 && calcularNivel <= 100){
         nivel = "Lendário"
     } else {
         nivel = "Imortal"
@@ -18,7 +18,7 @@ let saldoVitorias = quantidade(60, 25)
     
     console.log(`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`)
 
-function quantidade(vitoria, derrota){
+function calcularNivel(vitoria, derrota){
     let nivel = vitoria - derrota
     return nivel
 }
