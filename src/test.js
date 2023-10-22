@@ -1,8 +1,8 @@
 function calcularNivel(vitorias, derrotas) {
     const saldoVitorias = vitorias - derrotas
-    let nivel = ""
+    let nivel = " "
 
-    if (vitorias < 10) {
+    if (vitorias <= 10) {
         nivel = "Ferro"
     } else if (vitorias >= 11 && vitorias <= 20) {
         nivel = "Bronze"
@@ -18,7 +18,7 @@ function calcularNivel(vitorias, derrotas) {
         nivel = "Imortal"
     }
 
-    return `O Herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`
+    return (`O Herói tem saldo de ${saldoVitorias} e está no nível de ${nivel}`)
 }
 
 // Exemplo de uso:
