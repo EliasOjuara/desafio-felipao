@@ -1,25 +1,26 @@
+//Criação da classe
 class Heroi {
     constructor(nome, idade, tipo) {
       this.nome = nome;
       this.idade = idade;
       this.tipo = tipo;
     }
-  
+  // Criação do método
     atacar() {
       let ataque;
-  
+  //Usando um switch para determinar a descrição do ataque com base no tipo do herói.
       switch (this.tipo) {
         case 'mago':
-          ataque = 'usou magia';
+          ataque = 'magia';
           break;
         case 'guerreiro':
-          ataque = 'usou espada';
+          ataque = 'espada';
           break;
         case 'monge':
-          ataque = 'usou artes marciais';
+          ataque = 'artes marciais';
           break;
         case 'ninja':
-          ataque = 'usou shuriken';
+          ataque = 'shuriken';
           break;
         default:
           ataque = 'realizou um ataque';
